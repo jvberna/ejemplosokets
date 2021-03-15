@@ -1,0 +1,8 @@
+Conexión
+<div class="text-success" *ngIf="wsService.socketStatus">Conectado</div>
+<div class="text-danger" *ngIf="!wsService.socketStatus">Desconectado</div>
+
+<button (click)="enviar()">Enviar mensaje</button>
+
+<router-outlet>
+</router-outlet>
